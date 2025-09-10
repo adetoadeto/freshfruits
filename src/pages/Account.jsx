@@ -1,9 +1,11 @@
-const Account = () => {
-  return (
-   <section id="account">
-      <p>...Coming Soon</p>
-   </section>
-  )
+import { Outlet } from "react-router-dom"
+
+const Account = ()=> {
+    return (
+        <section id="account">
+            <Outlet/>
+        </section>
+    )
 }
 
-export default Account
+export default Account;

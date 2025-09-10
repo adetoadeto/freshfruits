@@ -8,7 +8,7 @@ const CartItem = ({name, src, quantity, id, onDelete}) => {
           <img src={src} alt="" />
           <p className="name">{name} ({quantity})</p>
         </div>
-        <p className="price">#{quantity * PRICE}</p>
+        <p className="price"> #{quantity * PRICE}</p>
         <button className="remove-item" onClick={()=> onDelete(id)}>
           <i className="fa-solid fa-trash"></i>
         </button>

@@ -1,10 +1,11 @@
 import Button from "../Buttons/Button";
 import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import { useParams, Link } from "react-router-dom";
 
-const ProductDetail = ({ fruitData }) => {
+const ProductDetail = () => {
+  const products = useSelector((state)=> state.data.value);
   // All fruit Data
-  const products = fruitData;
 
   const [displayProduct, setDisplayProduct] = useState([]);
   const [shoppingCart, setShoppingCart] = useState({ items: [] });
@@ -41,7 +42,7 @@ const ProductDetail = ({ fruitData }) => {
       }
     };
     handleDisplay();
-  }, fruitData);
+  }, products);
 
   // Increase Quantity
     const handleIncreaseQty = () => {

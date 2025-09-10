@@ -7,11 +7,11 @@ const Total = ({data}) => {
   })
 
   // Sum total of all products
-  const sumTotal = total.reduce((acc, currVal)=> acc + currVal, 0)
+  const sumTotal = (total.reduce((acc, currVal)=> acc + currVal, 0)).toLocaleString("en-US")
 
   return (
     <div className="total">
-      <p>Order Total</p>
+      <strong>Order Total</strong>
       <h4>{sumTotal}</h4>
     </div>
   );
