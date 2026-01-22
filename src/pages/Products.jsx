@@ -7,7 +7,7 @@ import {useDispatch} from "react-redux";
 import {generate} from "../utils/state/dataSlice"
 import images from "../utils/main";
 
-const API_KEY= import.meta.env.API_KEY;
+const API_KEY= import.meta.env.VITE_API_KEY;
 const Products = () => {
 
     const [fruitData, setFruitData] = useState([]);
