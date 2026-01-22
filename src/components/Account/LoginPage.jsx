@@ -8,7 +8,7 @@ const LoginPage = () => {
       buttonText="Login"
       userStatus="New User? "
       action="Create an account"
-      actionLink="/freshfruits/account"
+      actionLink="/account"
     >
       <Form labelText="Email" placeholderText="Input your email" type="email" />
       <Form

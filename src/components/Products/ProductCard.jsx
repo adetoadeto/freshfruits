@@ -7,7 +7,7 @@ const ProductCard = ({name, src}) => {
   
   return (
     <div className="product-card">
-      <Button><Link to={`/freshfruits/products/${name.toLowerCase()}`}>View product</Link></Button>
+      <Button><Link to={`/products/${name.toLowerCase()}`}>View product</Link></Button>
       <img src={src} alt="image of a fruit" className="product-image" />
       <div className="product-text">
         <img src={stars} alt="image of stars" className="product-review"/>

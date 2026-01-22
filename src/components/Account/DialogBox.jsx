@@ -9,7 +9,7 @@ const DialogBox = ({ heading, buttonText, userStatus, action, actionLink, childr
         {children}
 
         <Button>
-          <Link to="/freshfruits/checkout/successful">{buttonText}</Link>
+          <Link to="/checkout/successful">{buttonText}</Link>
         </Button>
 
         <p className="page-navigation">

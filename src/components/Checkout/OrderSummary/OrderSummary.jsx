@@ -16,7 +16,7 @@ const OrderSummary = ({cartList}) => {
         <OrderDetails key={item.id} {...item}/>
       ))}
       <Total data={cartList}/>
-      <Button id="confirm-btn" onClick={handleClearData}><Link to= {cartList.length === 0 ? "/freshfruits/products" : "/freshfruits/account"}>Confirm Order</Link></Button>
+      <Button id="confirm-btn" onClick={handleClearData}><Link to= {cartList.length === 0 ? "/products" : "/account"}>Confirm Order</Link></Button>
     </div>
   );
 };

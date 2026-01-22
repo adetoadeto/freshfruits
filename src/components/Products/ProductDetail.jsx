@@ -181,11 +181,11 @@ const ProductDetail = () => {
       </div>
       <div className="controls">
         <Button className="add-to-cart-btn">
-          <Link to="/freshfruits/products"> Continue Shopping</Link>
+          <Link to="/products"> Continue Shopping</Link>
         </Button>
 
         <Button className="add-to-cart-btn">
-          <Link to="/freshfruits/checkout"> Proceed to checkout</Link>
+          <Link to="/checkout"> Proceed to checkout</Link>
         </Button>
       </div>
     </section>

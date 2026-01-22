@@ -17,7 +17,7 @@ const Home = () => {
             Purchase fresh fruits from your comfort zone and have them delivered
             to your doorstep within minutes.
           </p>
-          <Button><Link to="/freshfruits/about">Learn More</Link></Button>
+          <Button><Link to="/about">Learn More</Link></Button>
         </article>
 
         <div className="image-container">
@@ -29,7 +29,7 @@ const Home = () => {
           Smash those fitness goals with ease. Choose from our list of fruit
           varieties
         </h3>
-        <Button><Link to="/freshfruits/products">Shop Now</Link></Button>
+        <Button><Link to="/products">Shop Now</Link></Button>
       </section>
     </>
   );

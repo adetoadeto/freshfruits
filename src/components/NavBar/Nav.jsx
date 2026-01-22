@@ -16,17 +16,17 @@ const Nav = () => {
           <Logo />
           <ul>
             <li>
-              <Link to="/freshfruits" className="list">
+              <Link to="/" className="list">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/freshfruits/about" className="list">
+              <Link to="/about" className="list">
                 About
               </Link>
             </li>
             <li>
-              <Link to="/freshfruits/products" className="list">
+              <Link to="/products" className="list">
                 Products
               </Link>
             </li>
@@ -34,11 +34,11 @@ const Nav = () => {
         </div>
 
         <div className="icons">
-          <Link to="/freshfruits/account">
+          <Link to="/account">
             <i className="fa-solid fa-user"> </i>
           </Link>
 
-          <Link to="/freshfruits/checkout">
+          <Link to="/checkout">
             <i className="fa-solid fa-cart-shopping "></i>
           </Link>
 
@@ -49,17 +49,17 @@ const Nav = () => {
       <div className={`mobile-nav ${selected && "block"}`}>
         <ul>
             <li>
-              <Link to="/freshfruits" className="list">
+              <Link to="/" className="list">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/freshfruits/about" className="list">
+              <Link to="/about" className="list">
                 About
               </Link>
             </li>
             <li>
-              <Link to="/freshfruits/products" className="list">
+              <Link to="/products" className="list">
                 Products
               </Link>
             </li>

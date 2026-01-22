@@ -24,26 +24,26 @@ const App = () => {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/freshfruits" element={<Home />} />
-          <Route path="/freshfruits/about" element={<About />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />}/>
           <Route
-            path="/freshfruits/products"
+            path="/products"
             element={
               <Products/>
             }
           />
           <Route
-            path="/freshfruits/products/:name"
+            path="/products/:name"
             element={<ProductDetail />}
           />
-          <Route path="/freshfruits/account" element={<Account />}>
+          <Route path="/account" element={<Account />}>
             <Route index element={<SignUpPage/>}/>
-            <Route path="/freshfruits/account/login" element={<LoginPage/>}/>
+            <Route path="/account/login" element={<LoginPage/>}/>
           </Route>
-          <Route path="/freshfruits/checkout" element={<Checkout />}>
+          <Route path="/checkout" element={<Checkout />}>
             <Route index element={<Output/>}/>
             <Route
-              path="/freshfruits/checkout/successful"
+              path="/checkout/successful"
               element={<SuccessPage />}
             />
           </Route>

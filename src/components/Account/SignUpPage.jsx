@@ -8,7 +8,7 @@ const SignUpPage = () => {
       buttonText="Create Account"
       userStatus="Existing User? "
       action="Login"
-      actionLink="/freshfruits/account/login"
+      actionLink="/account/login"
     >
       <div className="names">
         <Form
