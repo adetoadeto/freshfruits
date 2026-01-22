@@ -7,6 +7,7 @@ import {useDispatch} from "react-redux";
 import {generate} from "../utils/state/dataSlice"
 import images from "../utils/main";
 
+const API_KEY= import.meta.env.API_KEY;
 const Products = () => {
 
     const [fruitData, setFruitData] = useState([]);
@@ -31,7 +32,7 @@ const Products = () => {
         method: "GET",
         url: "https://fruits-api1.p.rapidapi.com/traicay",
         headers: {
-          "x-rapidapi-key": "a9c4ed52ddmsh9d992ad0f516bdep1de089jsn99532e42a26a",
+          "x-rapidapi-key": API_KEY,
           "x-rapidapi-host": "fruits-api1.p.rapidapi.com",
         },
       };
