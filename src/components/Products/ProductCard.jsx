@@ -13,7 +13,7 @@ const ProductCard = ({name, src}) => {
         <img src={stars} alt="image of stars" className="product-review"/>
         <div>
           <p>{name}</p>
-          <p># 3000</p>
+          <p># 2000</p>
         </div>
       </div>
     </div>
