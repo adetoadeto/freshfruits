@@ -9,7 +9,7 @@ This is an e-commerce website where consumers can purchase fresh fruits at an af
 
 
 # Links
-- Live Site URL: (https://adetoadeto.github.io/Fresh-Fruit/)
+- Live Site URL: (https://freshfruits-qf779kcvy-oluwatomis-projects-7fcb0596.vercel.app/)
 
 # Built with
 
