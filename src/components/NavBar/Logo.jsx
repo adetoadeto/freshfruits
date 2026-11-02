@@ -1,11 +1,11 @@
 const Logo = () => {
   return (
-    <div id="logo">
+    <a id="logo" href="/">
       <i className="fa-solid fa-basket-shopping"></i>
       <p id="brand-name">
-        <span>Fresh</span>Fruits
+        Fresh<span>Fruits</span>
       </p>
-    </div>
+    </a>
   );
 };
 

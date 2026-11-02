@@ -1,12 +1,12 @@
-import aboutImg from "../assets/images/about.jpg";
 import Icon from "../components/About/Icon";
+import aboutImg from "../assets/images/about.jpg";
 
 const About = () => {
   return (
     <section id="about">
       <article>
         <h2>
-          <span>Get</span> to 
+          <span>Get</span> to
           <span> know </span> us
         </h2>
         <p className="paragraph-text">
@@ -14,12 +14,8 @@ const About = () => {
           within minutes regardless of your location or budget
         </p>
         <ul>
-          <Icon text="Fresh produce" />
-          <Icon text="Affordable prices" />
-          <Icon text="Convenient payment options"/>
-          <Icon text="Timely delivery"/>
-          <Icon text="24hrs customer support" />
-          <Icon text="Return on delivery (applicable only to goods damaged in transit)" />
+          {["Fresh produce", "Affordable prices", "Convenient payment options", "Timely delivery", "24hrs customer support", "Return on delivery (applicable only to goods damaged in transit)"].map(item => <Icon key={item} text={item} />)
+          }
         </ul>
       </article>
       <img src={aboutImg} alt="fruits" />

@@ -1,37 +1,22 @@
 import { useState } from "react";
-import Logo from "./Logo";
 import { Link } from "react-router-dom";
+import Logo from "./Logo";
+import NavItems from "./NavItems";
 
 const Nav = () => {
   const [selected, setSelected] = useState(false)
 
-  const handleShowNav = ()=> {
+  const handleShowNav = () => {
     setSelected((prevValue) => !prevValue)
   }
 
   return (
     <nav>
-      <div className="main-nav">
-        <div id="links">
+      <div className="desktop-nav">
+     
           <Logo />
-          <ul>
-            <li>
-              <Link to="/" className="list">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="list">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="/products" className="list">
-                Products
-              </Link>
-            </li>
-          </ul>
-        </div>
+          <NavItems />
+       
 
         <div className="icons">
           <Link to="/account">
@@ -47,23 +32,7 @@ const Nav = () => {
       </div>
 
       <div className={`mobile-nav ${selected && "block"}`}>
-        <ul>
-            <li>
-              <Link to="/" className="list">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="list">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="/products" className="list">
-                Products
-              </Link>
-            </li>
-          </ul>
+        <NavItems />
       </div>
     </nav>
   );
